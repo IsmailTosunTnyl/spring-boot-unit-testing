@@ -9,6 +9,13 @@ public class DemoUtils {
     private String[] firstThreeLettersOfAlphabet = {"A", "B", "C"};
     private List<String> academyInList = List.of("luv", "2", "code");
 
+    public DemoUtils() {
+        System.out.println("DemoUtils constructor called");
+    }
+    public int addNumbers(int a, int b) {
+        return a + b;
+    }
+
     public List<String> getAcademyInList() {
         return academyInList;
     }
@@ -56,7 +63,7 @@ public class DemoUtils {
 
     public void checkTimeout() throws InterruptedException {
         System.out.println("I am going to sleep");
-        Thread.sleep(2000);
+        Thread.sleep(1500);
         System.out.println("Sleeping over");
     }
 
